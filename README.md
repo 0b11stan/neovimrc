@@ -17,3 +17,8 @@ Commands:
 
 -	`:MakeTags` : create a tags file (ctags is required)
 -	`:find` : fuzzyfind a file
+
+Sources
+-------
+
+-	[How to Do 90% of What Plugins Do (With Just Vim)](https://www.youtube.com/watch?v=XA2WjJbmmoM)
