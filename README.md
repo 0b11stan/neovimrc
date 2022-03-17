@@ -6,6 +6,7 @@ Cheat Sheet
 
 Shortcuts:
 
+- `t` : open NERDTree
 -	`^]` : follow the tag under cursor
 -	`^t` : go back to previous tag
 -	`g^]` : choose between abigous tags
@@ -17,6 +18,12 @@ Commands:
 
 -	`:MakeTags` : create a tags file (ctags is required)
 -	`:find` : fuzzyfind a file
+
+Templates (in `~/.config/.nvim/templates/`):
+
+- `\html`
+- `\python`
+- `\clang`
 
 Sources
 -------
