@@ -14,6 +14,7 @@ Shortcuts:
 -	`^n` : autocomplete everything
 -	`^x^f` : autocomplete file names
 -	`q:` : cmd history buffer (insert mode + <CR> to play command on line)
+-	`\c` : highlight column and not line
 
 Commands:
 
@@ -30,6 +31,9 @@ TODO
 ----
 
 -	tab completion (`inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"`\)
+-	fix back to start of file on format
+-	feat maketags on format
+-	fix implement comment en multiple languages
 
 Sources
 -------

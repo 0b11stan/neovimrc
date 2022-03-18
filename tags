@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/tristan/sources/public/neovimrc/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+"	nvim/init.vim	/^vmap " :s\/^\/#<CR>$/;"	m
+<C-j>	nvim/init.vim	/^noremap <C-j> <C-w>h$/;"	m
+<C-k>	nvim/init.vim	/^noremap <C-k> <C-w>j$/;"	m
+<C-l>	nvim/init.vim	/^noremap <C-l> <C-w>k$/;"	m
+<C-m>	nvim/init.vim	/^noremap <C-m> <C-w>l$/;"	m
+<Leader>c	nvim/init.vim	/^nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>$/;"	m
+<Leader>clang	nvim/init.vim	/^nnoremap <Leader>clang :-1read $HOME\/.config\/nvim\/templates\/skeleton.c<CR>o$/;"	m
+<Leader>html	nvim/init.vim	/^nnoremap <Leader>html :-1read $HOME\/.config\/nvim\/templates\/skeleton.html<CR>3jwf>a$/;"	m
+<Leader>python	nvim/init.vim	/^nnoremap <Leader>python :-1read $HOME\/.config\/nvim\/templates\/skeleton.py<CR>o$/;"	m
+Cheat Sheet	README.md	/^Cheat Sheet$/;"	s	chapter:My neovim configuration
+Formatonsave	nvim/init.vim	/^function! Formatonsave()$/;"	f
+MakeTags	nvim/init.vim	/^command! MakeTags !ctags -R .$/;"	c
+My neovim configuration	README.md	/^My neovim configuration$/;"	c
+NERDTreeWinSize	nvim/init.vim	/^let NERDTreeWinSize=21$/;"	v
+Sources	README.md	/^Sources$/;"	s	chapter:My neovim configuration
+TODO	README.md	/^TODO$/;"	s	chapter:My neovim configuration
+j	nvim/init.vim	/^noremap j h$/;"	m
+k	nvim/init.vim	/^noremap k j$/;"	m
+l	nvim/init.vim	/^noremap l k$/;"	m
+m	nvim/init.vim	/^noremap m l$/;"	m
+main	nvim/templates/skeleton.c	/^int main() {$/;"	f	typeref:typename:int
+main	nvim/templates/skeleton.py	/^def main():$/;"	f
+t	nvim/init.vim	/^map t :NERDTree<CR>$/;"	m
