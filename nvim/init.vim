@@ -10,11 +10,18 @@ set nocompatible
 syntax enable
 filetype plugin on
 
+" Autocomment 
+" TODO : make it dependant to language
+vmap " :s/^/#<CR>
+
 " Remap keys for usage with azerty
 noremap j h
 noremap k j
 noremap l k
 noremap m l
+
+" Leave terminal mode on escape
+tnoremap <Esc> <C-\><C-n>
 
 " Move in panels using CTRL
 noremap <C-m> <C-w>l
