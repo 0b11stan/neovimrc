@@ -49,6 +49,7 @@ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 nnoremap <Leader>html :-1read $HOME/.config/nvim/templates/skeleton.html<CR>3jwf>a
 nnoremap <Leader>python :-1read $HOME/.config/nvim/templates/skeleton.py<CR>o
 nnoremap <Leader>clang :-1read $HOME/.config/nvim/templates/skeleton.c<CR>o
+nnoremap <Leader>sh :-1read $HOME/.config/nvim/templates/skeleton.sh<CR>o
 
 " FMTs
 function Fmt(cmd)
