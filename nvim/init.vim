@@ -14,6 +14,9 @@ filetype plugin on
 " TODO : make it dependant to language
 vmap " :s/^/#<CR>
 
+" Use M key to set marks
+noremap M m
+
 " Remap keys for usage with azerty
 noremap j h
 noremap k j
@@ -48,9 +51,14 @@ nnoremap <Leader>python :-1read $HOME/.config/nvim/templates/skeleton.py<CR>o
 nnoremap <Leader>clang :-1read $HOME/.config/nvim/templates/skeleton.c<CR>o
 
 " FMTs
-autocmd BufWritePre *.py %!autopep8 -
-autocmd BufWritePre *.md %!mdfmt
-autocmd BufWritePre *.h,*.c,*.cc,*.cpp :py3file /usr/share/clang/clang-format.py
+function Fmt(cmd)
+  normal Mt
+  execute a:cmd
+  normal `t
+endfunction
+autocmd BufWritePre *.py call Fmt('%!autopep8 -')
+autocmd BufWritePre *.md call Fmt('%!mdfmt')
+autocmd BufWritePre *.h,*.c,*.cc,*.cpp call Fmt(':py3file /usr/share/clang/clang-format.py')
 
 " === PLUGINS === "
 " plugins are in `:echo stdpath('data')`

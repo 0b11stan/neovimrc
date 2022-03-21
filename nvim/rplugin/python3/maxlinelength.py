@@ -2,10 +2,10 @@
 # markdown addicts).
 #
 # Installation:
-#   
+#
 #       mkdir -p ~/.config/nvim/rplugin/python3
 #       cp maxlinelength.py ~/.config/nvim/rplugin/python3/maxlinelength.py
-# 
+#
 # Usage:
 #
 #       It exports a vim command, you can select multiple lines and run
@@ -13,6 +13,7 @@
 #       attribute in the class constructor to change you desired line length.
 #
 import pynvim
+
 
 @pynvim.plugin
 class MaxLineLength(object):
