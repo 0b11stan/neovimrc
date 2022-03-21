@@ -15,6 +15,12 @@ Shortcuts:
 -	`^x^f` : autocomplete file names
 -	`q:` : cmd history buffer (insert mode + <CR> to play command on line)
 -	`\c` : highlight column and not line
+-	`MV` : go to ~/.config/nvim/init.vim
+
+Marks:
+
+-	`Mx` : set a mark (uppercase is global, lowercase is filebased)
+-	\``x` : use a mark
 
 Commands:
 
