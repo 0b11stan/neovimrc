@@ -15,3 +15,5 @@ RUN curl -fLo \
 RUN echo 'PATH=$PATH:~/go/bin' >> ~/.bashrc
 
 CMD bash
+
+# vim: filetype=dockerfile
