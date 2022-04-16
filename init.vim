@@ -59,6 +59,7 @@ function Fmt(cmd)
 endfunction
 autocmd BufWritePre *.py call Fmt('%!autopep8 -')
 autocmd BufWritePre *.md call Fmt('%!mdfmt')
+autocmd BufWritePre *.rs call Fmt('%!rustfmt')
 autocmd BufWritePre *.h,*.c,*.cc,*.cpp call Fmt(':py3file /usr/share/clang/clang-format.py')
 
 " === PLUGINS === "
@@ -67,8 +68,10 @@ autocmd BufWritePre *.h,*.c,*.cc,*.cpp call Fmt(':py3file /usr/share/clang/clang
 call plug#begin(stdpath('data') . '/plugged')
   Plug 'preservim/nerdtree', { 'on': 'NERDTree' }
   Plug 'alvan/vim-closetag'
+  Plug 'preservim/tagbar'
+  Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Nerdtree settings
 let NERDTreeWinSize=21
-map t :NERDTree<CR>
+map t :NERDTree<CR>:TagbarToggle<CR>
