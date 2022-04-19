@@ -1,14 +1,18 @@
 #!/bin/bash
 
-pkgarch=neovim ctags python python-pynvim autopep8 go clang git
-pkgdeb=neovim universal-ctags python3 python3-pynvim python3-autopep8 golang clang git
+pkgarch='neovim ctags python python-pynvim autopep8 go clang git'
+pkgdeb='neovim universal-ctags python3 python3-pynvim python3-autopep8 golang clang git'
+
+usage() { echo "Usage: $0 <arch|deb>"; exit 1; }
 
 if [[ $1 == '-h' || $# -ne 1 ]]; then
-  echo "Usage: $0 <arch|deb>"; exit 1
-elif [[ $1 == "arch" ]]; then
+  usage
+elif [[ $1 == "arch" || $1 == "archlinux" ]]; then
   sudo pacman -Syu --noconfirm && sudo pacman --noconfirm -S $pkgarch
-elif [[ $1 == "deb" ]]; then
+elif [[ $1 == "deb" || $1 == "debian" ]]; then
   sudo apt-get update && sudo apt-get install -y $pkgdeb
+else
+  usage
 fi
 
 go install github.com/moorereason/mdfmt@latest
