@@ -30,7 +30,8 @@ stat ~/.cargo > /dev/null || {
   curl -s --proto '=https' --tlsv1.2 -sSf \
     -o /tmp/rust-init.sh https://sh.rustup.rs \
     && chmod +x /tmp/rust-init.sh \
-    && /tmp/rust-init.sh -y
+    && /tmp/rust-init.sh -y \
+    && echo 'source ~/.cargo/env' >> ~/.bashrc
 }
 
 # install vim plug
