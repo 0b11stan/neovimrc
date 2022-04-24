@@ -27,10 +27,14 @@ noremap m l
 tnoremap <Esc> <C-\><C-n>
 
 " Move in panels using CTRL
-noremap <C-m> <C-w>l
+" (following line is a fix : https://github.com/neovim/neovim/issues/18245)
+noremap <CR> <C-w>l
 noremap <C-l> <C-w>k
 noremap <C-k> <C-w>j
 noremap <C-j> <C-w>h
+
+" Remove search
+noremap h :nohlsearch<CR>
 
 " So we can use `:find ...` for fuzzyfind
 set path+=**
