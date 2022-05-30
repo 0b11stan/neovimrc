@@ -10,6 +10,9 @@ set nocompatible
 syntax enable
 filetype plugin on
 
+" Terminal mode configuration
+au TermOpen * set nonumber
+
 " Autocomment 
 " TODO : make it dependant to language
 vmap " :s/^/#<CR>
